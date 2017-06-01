@@ -23,6 +23,9 @@ enum {ARRAY_AMBIENT, ARRAY_OBJECT};
 void initialize(RF24 *radio);
 void loop(RF24 radio);
 void readIR(double *temps);
+double getCelcius(char buffer[]);
+bool send(double *temps, RF24 *radio);
+void waitForRequest(RF24 *radio);
 
 
 #endif
