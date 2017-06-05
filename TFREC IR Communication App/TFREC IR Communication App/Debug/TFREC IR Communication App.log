@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\winuser.rh(1433): warning RC4005: 'IDOK' : redefinition
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\winuser.rh(1434): warning RC4005: 'IDCANCEL' : redefinition
+  
+  TFREC IR Communication App.vcxproj -> C:\Users\Kalcsits Imaging Lab\Source\Repos\TFREC-IR\TFREC IR Communication App\Debug\TFREC IR Communication App.exe
+  TFREC IR Communication App.vcxproj -> C:\Users\Kalcsits Imaging Lab\Source\Repos\TFREC-IR\TFREC IR Communication App\Debug\TFREC IR Communication App.pdb (Partial PDB)
