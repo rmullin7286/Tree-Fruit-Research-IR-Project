@@ -2,14 +2,21 @@
 #include "RF24.h"
 
 #define TEST 0x00
+#define RUN 0x01
+
+enum {ARRAY_AMBIENT, ARRAY_OBJECT};
 
 bool test(RF24 *radio);
+bool run(RF24 *radio, int16_t *data, int sizeBytes);
+void toString(int *data, char *string);
+
 bool radioNumber = 0;
 byte pipes[][6] = {"1Node", "2Node"};
 RF24 radio(9, 10);
 
 byte command;
-float temps[2];
+int16_t data[2] = {0, 1};
+char serialData[17];
 
 void setup() {
   // put your setup code here, to run once:
@@ -35,6 +42,18 @@ void loop() {
       else
         Serial.println("F"); // F for fail  
       break;
+
+      case RUN:
+      if(run(&radio, data, 4))
+      {
+        toString(data, serialData);
+        Serial.println(serialData); 
+      }
+      else
+      {
+        Serial.println("timeout error.");
+      }
+      break;
     }
   }
 }
@@ -52,6 +71,7 @@ bool test(RF24 *radio)
   {
     if(micros() - started_waiting_at > 200000)
     {
+      radio->stopListening();
       return false;
     }
   }
@@ -59,5 +79,36 @@ bool test(RF24 *radio)
   radio->read(&request, sizeof(bool));
   radio->stopListening();
   return true;
+}
+
+bool run(RF24 *radio, int16_t *data, int sizeBytes)
+{
+  bool request = 1;
+
+  radio->write(&request, sizeof(bool));
+  unsigned long started_waiting_at = micros();
+
+  radio->startListening();
+
+  while(!radio->available())
+  {
+    if(micros() - started_waiting_at > 200000)
+    {
+      radio->stopListening();
+      return false;
+    }
+  }
+
+  while(radio->available())
+  {
+    radio->read(data, 4);
+  }
+  radio->stopListening();
+  return true;
+}
+
+void toString(int *data, char *string)
+{
+  sprintf(string, "%d,%d",data[ARRAY_AMBIENT],data[ARRAY_OBJECT]);
 }
 

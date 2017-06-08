@@ -1,0 +1,12 @@
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\bin\Debug\TFREC IR app.exe.config
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\bin\Debug\TFREC IR app.exe
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\bin\Debug\TFREC IR app.pdb
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC IR app.csprojResolveAssemblyReference.cache
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC_IR_app.Form1.resources
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC_IR_app.Properties.Resources.resources
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC IR app.csproj.GenerateResource.Cache
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC IR app.exe
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC IR app.pdb
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC_IR_app.settings.resources
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC_IR_app.about.resources
+C:\Users\Kalcsits Imaging Lab\Documents\Ryan Mullin\TFREC IR app\TFREC IR app\TFREC IR app\obj\Debug\TFREC_IR_app.help.resources
